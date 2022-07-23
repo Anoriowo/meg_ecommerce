@@ -1,0 +1,58 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1, h2, h3 {
+    margin: 0.5rem 0;
+}
+h1{
+    font-size:1.5rem ;
+}
+h2{
+    font-size: 1.2rem;
+}
+h3{
+    font-size: 1rem;
+}
+a{
+    text-decoration: none;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+.col-1{
+    flex: 1;
+}
+.col-2{
+    flex: 2;
+}
+.block{
+    background-color: grey;
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+}
+.row.center{
+    align-items: center;
+}
+img.small{
+    width: 100px;
+}
+button{
+    font-size: 0.8rem;
+    padding: 0.2rem;
+    margin: 0.1rem;
+    border-radius: 10px;
+    background-color: rgb(255, 123, 0);
+    cursor: pointer;
+    width: 90%;
+}
+button.badge{
+    background-color: red;
+}
+button.add{
+    background-color: rgb(124, 44, 57);
+}
+button.remove{
+    background-color: green;
+}

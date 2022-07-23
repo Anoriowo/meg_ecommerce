@@ -1,0 +1,69 @@
+@import './colors';
+
+.mid_bus{
+    background-color: $mycolor2;
+    color: $mycolor3;
+    padding: 2.2rem 3rem;
+    height: 20rem;
+    .mid_text{
+        h1{
+            font-size: 4rem;
+            font-weight: bolder;
+            margin-bottom: -1rem;
+         }
+         h2{
+             color: $mycolor;
+             margin:0.5rem 1.4rem;
+         }
+         h6{
+            margin: 1.5rem;
+            font-size: large;
+         }
+
+    }
+    .circle1{
+        border: 5px dashed rgba(255, 174, 0, 0.52);
+        width: 25rem;
+        height: 23.5rem;
+        border-radius: 50%;
+        position: relative;
+        left: 42rem;
+        top: -15rem;
+        animation: roll 30s ease-in-out infinite;
+        transform-origin: center;
+        transform-box: fill-box;
+
+        .circle2{
+            border: 25px solid rgba(120, 117, 117, 0.154);
+            width: 20rem;
+            height: 20rem;
+            border-radius: 50%;
+            position: relative;
+            top: 1rem;
+            left: 1rem; 
+            
+        }
+    }
+    img{
+        position: relative;
+        left:40rem;
+        top: -36rem;
+        width: 24rem; 
+    }
+    .img2{
+        width: 37rem;
+        height: 25rem;
+        left: 30rem;
+        top: -39rem;
+        animation: big 30s ease-in-out infinite;
+    } 
+   
+}
+@keyframes roll {
+   from{
+    transform: rotateZ(0deg);
+   }
+   to{
+    transform: rotateZ(360deg);
+   }
+}

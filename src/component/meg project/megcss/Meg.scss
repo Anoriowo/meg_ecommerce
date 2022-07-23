@@ -1,0 +1,232 @@
+@import './colors';
+
+body{
+    color: $mycolor;
+}
+
+h1{
+    font-family: Eremitage;
+    font-weight: 550;
+    font-size: 1.8rem;
+    margin-left: 1.4rem;
+    span{
+    color: $mycolor3;
+    }
+}
+
+a{
+    text-decoration: none;
+    color: $mycolor3;
+    font-size: 0.8rem;   
+}
+
+
+//Header
+.the-head{
+    background-color: $mycolor2;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1rem; 
+    .category{
+        display: flex;
+        li{
+            list-style-type: none;
+            margin-left: 1.4rem;
+        }
+        .sub-category{
+                color: red;
+                display: none;
+                &:hover{
+                    display: inline-block;
+                }
+                }
+        }
+    
+    .search-box{
+        border: 1px solid;
+        border-radius: 20px;
+        height: 1.4rem;
+        position: relative;  
+        right: 5rem;
+        top: 1rem;
+        input{
+            background: none;
+            border: none;
+            color: $mycolor3;
+        }
+    }
+    .icons{
+       position: relative;
+       top: 1rem;
+    }
+}
+
+//footer
+.foot{
+    background-color: #100F12;
+    height: 300px;
+    padding: 20px;
+    margin-top: 10px;
+    color: $mycolor;
+    .footer{
+        display: flex;
+        justify-content: space-between; 
+        padding: 15px;
+        margin-left: 10px;
+        margin-right: 10px;
+       h3{
+        font-size: 15px;
+        padding: 5px;
+       }
+       p{
+        color: $mycolor3;
+        font-size: 13px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 10px;
+       }
+       .mail{
+        border: 1px solid;
+        border-radius: 20px;
+        background-color: $mycolor3;
+        input{
+            background: none;
+            border: none;
+            color: $mycolor3;
+            margin-left: 15px;
+        }
+        button{
+            color: $mycolor3;
+            background-color: $mycolor;
+            padding: 5px;
+            border-radius: 20px;
+            margin: 5px;
+            width: 70px;
+            border: none;
+        }
+       }
+       .icons-2{
+        padding: 15px;
+        display: flex;
+        .singleicon{
+            padding: 10px;
+        }
+       }
+    }
+    .bottom{
+        margin: 20px;
+        .empty{
+            border-bottom: 1px solid $mycolor;
+        }
+        p{
+           text-align: center;
+            color: $mycolor3; 
+            padding: 10px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 13px;
+        }
+        
+    }
+}
+//trending
+.trend{
+    padding: 2rem;
+    
+    h2{
+        color: $mycolor2;
+    }
+    .hr_one{
+        width: 5%;
+        height: 0.5rem;
+        background-color: $mycolor;
+        margin: 5px 0 8px 5px;
+    }
+
+   .trend-box{
+    display: flex;
+    justify-content: space-around;
+    
+   .trend-item{
+        margin: 0.5rem;
+        border: 0px solid rgb(250, 245, 245);
+        background-color: rgb(208, 214, 214);
+        box-shadow: 5px 5px 10px rgb(190, 186, 186);
+        text-align: center;
+    img{
+        width: 10rem;
+        height: 50%;
+    }
+    h3{
+        color: $mycolor2;
+        width: 100%;
+    }
+    p{
+        color: $mycolor;
+        font-size: 0.8rem;
+        font-weight: 700;
+    }
+    button{
+        border: 1px solid;
+        color: $mycolor2;
+        background: none;
+    }
+   }
+} 
+}
+.trend_page{
+    padding: 1.2rem;
+    margin: 1rem 15%;
+    border-radius: 5rem;
+    background-color: rgba(209, 210, 204, 0.996);
+    width: 70%;
+    text-align: center;
+     h2{
+       color: $mycolor2; 
+       font-weight: 700;
+       padding: 1rem;
+    }
+    .trend_page_1{
+        display: flex;
+        
+        img{
+         width: 300px;
+         height: 300px;
+        border-radius: 20px;
+        padding: 5px 20px 10px 5px;
+        }
+        p{
+            font-family:cursive ;
+            color: $mycolor2;
+            line-height: 2;
+            padding: 0.8rem 0;
+            
+        }
+    }
+
+}
+.the_list{
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5rem 4rem;
+    
+    .sing_list{
+        display: flex;    
+        border-radius: 0.5rem;
+        justify-content: space-around;
+        border: 0.5px solid white;
+        box-shadow: 5px 5px 5px rgb(223, 216, 216);
+        width: 15rem;
+        height: 3rem;
+        margin: 0.5rem -2rem;
+        align-items: center;
+        &:hover{
+           font-size: larger;     
+        }
+
+        .lists{
+            color: $mycolor2;
+            font-family:Arial, Helvetica, sans-serif;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+    }
+}
